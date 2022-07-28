@@ -16,10 +16,9 @@
   /* Neutral Color */
   --color-font: hsl(0, 0%, 100%);
 
-  /* Font Awesome custom properties */
-  --fa-border-radius: 50%;
-  --fa-border-padding: 2rem 1.35rem;
-  --fa-primary-color: blue;
+  /* Transition */
+  --timing-duration: 0.3s;
+  --timing-function: cubic-bezier(0.5, 0, 0.75, 0);
 }
 
 *,
@@ -50,8 +49,7 @@ body {
   width: 81%;
 }
 
-.huddle,
-.community {
+.huddle {
   padding: 4em 0;
 }
 
@@ -64,6 +62,10 @@ body {
   /* display: bloc; */
   width: 100%;
   height: auto;
+}
+
+.community {
+  padding: 4em 0 5.5em;
 }
 
 .community__title {
@@ -97,6 +99,13 @@ body {
   font-size: 1.5rem;
   font-family: var(--font-headings);
   box-shadow: 0px 5px 10px 6px var(--color-box-shadow);
+  transition: color var(--timing-duration) var(--timing-function),
+    background-color var(--timing-duration) var(--timing-function);
+}
+
+.community__btn:hover {
+  color: var(--color-font);
+  background-color: var(--color-filter);
 }
 
 .community__social-medias {
@@ -107,4 +116,12 @@ body {
 
 .community__icons {
   margin: 0.5rem;
+}
+
+.fa-stack {
+  transition: color var(--timing-duration) var(--timing-function);
+}
+
+.fa-stack:hover {
+  color: var(--color-filter);
 }
