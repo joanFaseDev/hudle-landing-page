@@ -43,7 +43,7 @@ Users should be able to:
 
 - Use a _main_ element as a global container then nest a _div_ inside with a _width_ in percentage, that way no padding is needed.
 
-- Then create two _section_ element, each with a _h2_ heading. The first will contain the Huddle part with the illustration. The second will contain the community part with the link and social medias logos.
+- Then create two _section_ elements, each with a _h2_ heading. The first will contain the Huddle part with the illustration. The second will contain the Community part with the link and social media logos.
 
 - The Register button is used as a link so we need an _a_ element with lots of styling (also there's an active part to style).
 
@@ -60,7 +60,7 @@ Users should be able to:
 
 ### What I learned
 
-- I got acquainted with the Font Awesome API. I just read through the basics but it looks fun and quite easy to implement. I could only use the free assets though so i couldn't totally replicate the mockup design. That being said i like the design i ended up with to that's ok.
+- I got acquainted with the Font Awesome API. I just read through the basics but it looks fun and quite easy to implement. I could only use the free assets though so i couldn't totally replicate the mockup design. That being said i like the design i ended up with so that's ok.
 
 - I was made painfully aware of the fact that i'm still far from having a 'decent' level with CSS Grid. I ended up losing a lot of time because i forgot that the grid layout only apply to direct childs of the container.
 
