@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  /* Typography */
+  --font-headings: "Poppins", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-size-default: 16px;
+  --font-weight-default: 400;
+  --font-weight-bold: 600;
+
+  /* Primary Colors */
+  --color-background: hsl(257, 40%, 49%);
+  --color-filter: hsl(300, 69%, 71%);
+  --color-box-shadow: hsl(256, 39%, 37%);
+
+  /* Neutral Color */
+  --color-font: hsl(0, 0%, 100%);
+
+  /* Font Awesome custom properties */
+  --fa-border-radius: 50%;
+  --fa-border-padding: 2rem 1.35rem;
+  --fa-primary-color: blue;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size-default);
+}
+
+body {
+  background: linear-gradient(var(--color-background), var(--color-background));
+  color: var(--color-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 81%;
+}
+
+.huddle,
+.community {
+  padding: 4em 0;
+}
+
+.huddle__logo {
+  display: block;
+  margin-bottom: 8em;
+}
+
+.huddle__illustration {
+  /* display: bloc; */
+  width: 100%;
+  height: auto;
+}
+
+.community__title {
+  font-family: var(--font-headings);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community__paragraph {
+  font-family: var(--font-body);
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 2.8rem;
+}
+
+.community__container-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9em;
+}
+
+.community__btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-background);
+  padding: 1em 6.5em;
+  border-radius: 2em;
+  background-color: var(--color-font);
+  font-size: 1.5rem;
+  font-family: var(--font-headings);
+  box-shadow: 0px 5px 10px 6px var(--color-box-shadow);
+}
+
+.community__social-medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community__icons {
+  margin: 0.5rem;
+}
